@@ -1,0 +1,23 @@
+@import 'src/styles/palette';
+
+.home {
+	background-image: url('src/assets/img/background-main-page.svg');
+	background-size: cover;
+	background-position: center;
+	max-width: 100%;
+	height: 800px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+
+	&__container {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 4.5rem;
+		font-weight: 600;
+		color: $white;
+		padding-top: 80px;
+	}
+}
