@@ -1,0 +1,55 @@
+@import 'src/styles/palette';
+
+.search {
+	width: 1320px;
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: 70px;
+	color: $white;
+	filter: brightness(0.9);
+	backdrop-filter: blur(10px);
+	border-radius: 12px;
+	padding: 10px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		&__info {
+			display: flex;
+			gap: 60px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__input {
+		background: none;
+		outline: none;
+		color: $white;
+		font-size: 1.1rem;
+	}
+
+	::placeholder {
+		color: $white;
+	}
+
+	&__block {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__button {
+		background: $white;
+		color: #2659c3;
+		padding: 10px 45px;
+		border-radius: 20px;
+		font-size: 1rem;
+		font-weight: 600;
+		cursor: pointer;
+	}
+}

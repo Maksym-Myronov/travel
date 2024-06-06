@@ -1,0 +1,31 @@
+@import 'src/styles/palette';
+
+.categories {
+	width: 1320px;
+	color: $white;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	}
+
+	&__block {
+		display: block;
+		text-align: center;
+	}
+
+	&__image {
+		width: 38px;
+		height: 38px;
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 600;
+		margin: 45px 0;
+	}
+
+	&__text {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
