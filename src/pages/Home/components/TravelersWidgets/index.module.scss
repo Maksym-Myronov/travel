@@ -1,0 +1,25 @@
+@import 'styles/palette';
+
+.travelers {
+	box-shadow:
+		rgba(50, 50, 93, 0.25) 0 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 20px;
+	padding: 12px;
+	margin-bottom: 40px;
+	color: $black;
+
+	&__place {
+		margin-top: 20px;
+		font-size: 1.75rem;
+	}
+
+	&__community {
+		color: gray;
+		margin: 10px 0;
+	}
+
+	&__info {
+		color: gray;
+	}
+}
