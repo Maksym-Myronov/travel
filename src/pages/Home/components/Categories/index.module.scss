@@ -29,3 +29,14 @@
 		color: rgba(255, 255, 255, 0.5);
 	}
 }
+
+@media screen and (max-width: 1440px) {
+	.categories {
+		width: auto;
+
+		&__container {
+			grid-row-gap: 20px;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+		}
+	}
+}

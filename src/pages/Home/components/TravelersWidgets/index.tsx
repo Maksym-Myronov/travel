@@ -17,7 +17,7 @@ export const TravelersWidgets: React.FC<TravelersWidgetProps> = ({
 }) => {
 	return (
 		<div className={s.travelers}>
-			<img src={imageUrl} alt="place" />
+			<img src={imageUrl} alt="place" className={s.travelers__image} />
 			<p className={s.travelers__place}>{place}</p>
 			<p className={s.travelers__community}>{communityName}</p>
 			<p className={s.travelers__info}>{travelers}</p>

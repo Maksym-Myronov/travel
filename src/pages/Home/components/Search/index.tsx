@@ -31,8 +31,8 @@ export const Search: React.FC = () => {
 						<img src={peopleIcon} alt="peopleIcon" />
 						<p>1 room, 2 adults</p>
 					</div>
-					<button className={s.search__button}>Search</button>
 				</div>
+				<button className={s.search__button}>Search</button>
 			</div>
 		</div>
 	);

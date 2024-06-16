@@ -2,6 +2,9 @@
 
 .shared {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 340px;
 	height: 220px;
 
@@ -13,10 +16,41 @@
 
 	&__text {
 		position: absolute;
-		top: 160px;
-		left: 30px;
+		text-align: center;
 		font-size: 1.8rem;
 		font-weight: 500;
 		color: $white;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.shared {
+		width: 290px;
+		height: auto;
+
+		&__image {
+			width: 100%;
+			height: 100%;
+			border-radius: 15px;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1290px) {
+	.shared {
+		width: auto;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.shared {
+		&__text {
+			font-size: 1.5rem;
+		}
 	}
 }
