@@ -8,6 +8,12 @@
 	padding: 12px;
 	margin-bottom: 40px;
 	color: $black;
+	width: 345px;
+
+	&__image {
+		width: 100%;
+		height: auto;
+	}
 
 	&__place {
 		margin-top: 20px;
@@ -21,5 +27,11 @@
 
 	&__info {
 		color: gray;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.travelers {
+		width: auto;
 	}
 }
