@@ -13,10 +13,19 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		&__info {
 			display: flex;
 			gap: 60px;
+		}
+
+		&__datapicker {
+			padding: 8px;
+			font-size: 14px;
+			border-radius: 4px;
+			background: rgba(255, 255, 255, 0.5);
+			outline: none;
 		}
 	}
 
