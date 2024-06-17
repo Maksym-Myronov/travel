@@ -55,6 +55,24 @@
 	}
 }
 
+.datePickerContainer {
+	display: flex;
+	justify-content: space-between;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.datePickerInput {
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+}
+
 @media screen and (max-width: 1520px) {
 	.home {
 		&__traveler {
