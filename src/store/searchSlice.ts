@@ -9,6 +9,8 @@ interface Coordinates {
 interface City {
 	name: string;
 	country_name: string;
+	country_code: string;
+	id: string;
 	coordinates: Coordinates;
 }
 

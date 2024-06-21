@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { headerRoutes } from 'core/constans/header-routes';
 import { HeaderRoute } from 'Layout/components/Header/HeaderRoute';
-// Styles
-import s from './index.module.scss';
 // Images
 import logo from '../../../assets/img/trxvl..svg';
+// Styles
+import s from './index.module.scss';
 
 export const Header: React.FC = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -41,11 +41,15 @@ export const Header: React.FC = () => {
 
 	return (
 		<div className={`${s.header} ${isOpen ? s.header__open : ''}`}>
-			<div className={s.header__burger} onClick={toggleMenu}>
+			<button
+				aria-label="Toggle menu"
+				className={s.header__burger}
+				onClick={toggleMenu}
+			>
 				<div className={s.header__div} />
 				<div className={s.header__div} />
 				<div className={s.header__div} />
-			</div>
+			</button>
 			<div
 				className={`${s.header__container} ${isOpen ? s.header__container : s.header__close}`}
 			>
