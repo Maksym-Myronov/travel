@@ -30,9 +30,27 @@
 	}
 
 	&__list {
+		position: relative;
 		display: flex;
 		align-items: center;
 		gap: 20px;
+
+		&__items {
+			position: absolute;
+			top: 50px;
+			left: -10px;
+			background: $white;
+			width: 150%;
+			border-radius: 6px;
+			z-index: 100;
+		}
+
+		&__button {
+			padding: 20px 0 20px 55px;
+			background: none;
+			color: black;
+			font-size: 1rem;
+		}
 	}
 
 	&__input {
@@ -40,16 +58,104 @@
 		outline: none;
 		color: $white;
 		font-size: 1.1rem;
+		width: 400px;
+	}
+
+	&__window {
+		position: absolute;
+		background: #fff;
+		color: #000;
+		width: 450px;
+		top: 50px;
+		text-align: center;
+		padding: 15px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		z-index: 1000;
+
+		&__block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 0;
+
+			p {
+				margin: 0;
+				font-weight: bold;
+			}
+		}
+
+		&__counter {
+			display: flex;
+			align-items: center;
+			border: 1px solid black;
+			border-radius: 6px;
+		}
+
+		&__btn {
+			cursor: pointer;
+			background: none;
+			border: none;
+			width: 30px;
+			height: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			transition: background 0.3s;
+			border-radius: 6px;
+
+			&:hover {
+				background: #e0e0e0;
+			}
+
+			&:active {
+				background: #d0d0d0;
+			}
+		}
+
+		&__value {
+			margin: 0 10px;
+			font-size: 16px;
+			min-width: 20px;
+			text-align: center;
+		}
+
+		&__done {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background 0.3s;
+
+			&:hover {
+				background: #0056b3;
+			}
+
+			&:active {
+				background: #004099;
+			}
+		}
+	}
+
+	&__block {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&__btn {
+			cursor: pointer;
+			background: none;
+		}
 	}
 
 	::placeholder {
 		color: $white;
-	}
-
-	&__block {
-		display: flex;
-		align-items: center;
-		gap: 10px;
 	}
 
 	&__button {
